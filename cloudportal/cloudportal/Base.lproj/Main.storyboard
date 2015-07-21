@@ -4,47 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Sort-->
-        <scene sceneID="1vm-NJ-a1I">
-            <objects>
-                <viewController title="Sort" modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="uvb-rL-UBL" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3hi-gb-7Jg"/>
-                        <viewControllerLayoutGuide type="bottom" id="6bv-dA-bIh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uW4-tI-1b0">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEL-dd-7nI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" id="SZo-EE-F2x"/>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
-                                </variation>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="AEL-dd-7nI"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="AEL-dd-7nI"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="400" height="50"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wFc-ZT-mBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1479" y="-58"/>
-        </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -79,7 +38,7 @@
                                     <barButtonItem title="Settings" id="q6B-nS-pUF"/>
                                     <barButtonItem title="Sort" id="ttF-50-69s">
                                         <connections>
-                                            <segue destination="uvb-rL-UBL" kind="popoverPresentation" popoverAnchorBarButtonItem="ttF-50-69s" id="UzC-eS-frm">
+                                            <segue destination="M1H-jB-rau" kind="popoverPresentation" identifier="sortPopover" popoverAnchorBarButtonItem="ttF-50-69s" id="dbL-hK-SNs">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
@@ -109,6 +68,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="592.5" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Q9-zT-9AO">
+            <objects>
+                <viewController id="M1H-jB-rau" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bKw-zR-37w"/>
+                        <viewControllerLayoutGuide type="bottom" id="sNz-dX-WfJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l4t-N3-cba">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="50"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="50"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2U-pL-ITM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.5" y="-48"/>
         </scene>
         <!--Drives-->
         <scene sceneID="5KN-KZ-z06">

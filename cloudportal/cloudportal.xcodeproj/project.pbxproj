@@ -13,7 +13,7 @@
 		BD1797881B55776400DD8E4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1797871B55776400DD8E4D /* Images.xcassets */; };
 		BD17978B1B55776400DD8E4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1797891B55776400DD8E4D /* LaunchScreen.xib */; };
 		BD1797971B55776400DD8E4D /* cloudportalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1797961B55776400DD8E4D /* cloudportalTests.swift */; };
-		BD1797A51B557B4300DD8E4D /* DrivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1797A41B557B4300DD8E4D /* DrivesViewController.swift */; };
+		BD474E6A1B5EC10000370464 /* FileListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD474E691B5EC10000370464 /* FileListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		BD1797901B55776400DD8E4D /* cloudportalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cloudportalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1797951B55776400DD8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD1797961B55776400DD8E4D /* cloudportalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cloudportalTests.swift; sourceTree = "<group>"; };
-		BD1797A41B557B4300DD8E4D /* DrivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrivesViewController.swift; sourceTree = "<group>"; };
+		BD474E691B5EC10000370464 /* FileListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1797801B55776400DD8E4D /* AppDelegate.swift */,
-				BD1797A41B557B4300DD8E4D /* DrivesViewController.swift */,
+				BD474E691B5EC10000370464 /* FileListController.swift */,
 				BD1797821B55776400DD8E4D /* ViewController.swift */,
 				BD1797841B55776400DD8E4D /* Main.storyboard */,
 				BD1797871B55776400DD8E4D /* Images.xcassets */,
@@ -217,7 +217,7 @@
 			files = (
 				BD1797831B55776400DD8E4D /* ViewController.swift in Sources */,
 				BD1797811B55776400DD8E4D /* AppDelegate.swift in Sources */,
-				BD1797A51B557B4300DD8E4D /* DrivesViewController.swift in Sources */,
+				BD474E6A1B5EC10000370464 /* FileListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +415,7 @@
 				BD17979C1B55776400DD8E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD17979D1B55776400DD8E4D /* Build configuration list for PBXNativeTarget "cloudportalTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				BD17979F1B55776400DD8E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
