@@ -20,6 +20,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         // Dispose of any resources that can be recreated.
     }
     
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    //These two functions override the popover segue function so that it displays a tooltip popover
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "sortPopover" {
             let popoverViewController = segue.destinationViewController as! UIViewController
@@ -31,6 +33,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.None
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 }
 
